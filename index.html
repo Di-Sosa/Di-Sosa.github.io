@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Paradise - Luxo y Confort</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <h1>Hotel Paradise</h1>
+            <div class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#habitaciones">Habitaciones</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bienvenido al Paraíso</h1>
+            <p>Experimente el lujo y la comodidad en nuestro hotel de 5 estrellas</p>
+            <a href="#reservar" class="btn">Reservar Ahora</a>
+        </div>
+    </section>
+
+    <section class="services" id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>SPA & Wellness</h3>
+                <p>Relájese en nuestro centro de bienestar de clase mundial</p>
+            </div>
+            <div class="service-card">
+                <h3>Restaurante Gourmet</h3>
+                <p>Experiencia culinaria con chefs internacionales</p>
+            </div>
+            <div class="service-card">
+                <h3>Piscina Infinity</h3>
+                <p>Disfrute de nuestra espectacular piscina con vista al mar</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="rooms" id="habitaciones">
+        <div class="room-container">
+            <h2>Nuestras Habitaciones</h2>
+            <div class="room-cards">
+                <div class="room-card">
+                    <img src="https://www.swissotel.com/assets/0/92/2119/3396/3435/3437/6442451795/39020fa9-c84f-4c98-b6c0-d4cf0505c842.jpg" alt="Habitación Ejecutiva">
+                    <h3>Habitación Ejecutiva</h3>
+                    <p>Amplias habitaciones con vista al mar y todas las comodidades</p>
+                    <p class="price">$200/noche</p>
+                </div>
+                <div class="room-card">
+                    <img src="https://s3.amazonaws.com/static-webstudio-accorhotels-usa-1.wp-ha.fastbooking.com/wp-content/uploads/sites/19/2022/03/11175445/DUF_7063-v-ok-1170x780.jpg" alt="Suite Presidencial">
+                    <h3>Suite Presidencial</h3>
+                    <p>Lujo máximo con jacuzzi privado y servicio personalizado</p>
+                    <p class="price">$500/noche</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="search-section" id="busqueda">
+        <div class="search-container">
+            <h2>Consulta de de Reserva</h2>
+            <div class="search-box">
+                <input type="number" 
+                       class="search-input" 
+                       placeholder="Ingrese la cédula del alumno"
+                       id="cedulaInput">
+                <button class="search-btn" onclick="buscarAlumno()">Buscar</button>
+            </div>
+            <div id="resultado" class="result-container"></div>
+        </div>
+    </section>
+
+    <section class="category-section" id="categorias">
+        <div class="search-container">
+            <h3>Seleccione una categoría</h3>
+            <select class="category-selector" id="categorySelect" onchange="buscarArticulos()">
+                <option value="">Seleccione categoría</option>
+                <option value="DEPORTE">DEPORTE</option>
+                <option value="HOGAR">HOGAR</option>
+                <option value="TECNOLOGIA">TECNOLOGIA</option>
+                <option value="COMIDA">COMIDA</option>
+            </select>
+            <div id="articulosResult" class="articles-grid"></div>
+        </div>
+    </section>
+
+    <section class="hero">
+    </section>
+
+    <footer id="contacto">
+        <p>Contacto: info@hotelparadise.com | Tel: +58 123456789</p>
+        <p>Dirección: Av. del Paraíso 123, Ciudad Tropical</p>
+        <p>&copy; 2025 Hotel Paradise - Todos los derechos reservados</p>
+    </footer>
+    <script src="funcion.js"></script>
+</body>
+</html>
