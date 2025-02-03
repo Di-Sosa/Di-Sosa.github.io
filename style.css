@@ -242,7 +242,7 @@
     left: 0;
     width: 100%;
     padding: 2rem;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.185));
     color: var(--accent-color);
     font-size: 1.8rem;
   }
